@@ -39,4 +39,63 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+let parentElement1 = document.querySelector("nav");
+
+let home = document.createElement("a");
+home.textContent = "Home";
+
+parentElement1.appendChild(home);
+
+
+let links = document.querySelectorAll("a");
+links[0].textContent = siteContent["nav"]["nav-item-1"];
+links[1].textContent = siteContent["nav"]["nav-item-2"];
+links[2].textContent = siteContent["nav"]["nav-item-3"];
+links[3].textContent = siteContent["nav"]["nav-item-4"];
+links[4].textContent = siteContent["nav"]["nav-item-5"];
+links[5].textContent = siteContent["nav"]["nav-item-6"]; 
+
+links.forEach( element => {
+  element.style.color = "green";
+})
+let parentElement2 = links[0];
+
+let login = document.createElement("a");
+login.textContent = "Login";
+login.style.marginRight = "40px";
+login.style.color = "green";
+
+parentElement2.prepend(login);
+
+let title = document.querySelector("h1");
+title.textContent = siteContent["cta"]["h1"];
+
+let button = document.querySelector("button");
+button.textContent = siteContent["cta"]["button"];
+
+let headImg = document.getElementById("cta-img");
+headImg.src = siteContent["cta"]["img-src"];
+
+let subtitles = document.querySelectorAll("h4");
+subtitles[0].textContent = siteContent["main-content"]["features-h4"];
+subtitles[1].textContent = siteContent["main-content"]["about-h4"];
+subtitles[2].textContent = siteContent["main-content"]["services-h4"];
+subtitles[3].textContent = siteContent["main-content"]["product-h4"];
+subtitles[4].textContent = siteContent["main-content"]["vision-h4"];
+subtitles[5].textContent = siteContent["contact"]["contact-h4"];
+
+let content = document.querySelectorAll("p");
+content[0].textContent = siteContent["main-content"]["features-content"];
+content[1].textContent = siteContent["main-content"]["about-content"];
+content[2].textContent = siteContent["main-content"]["services-content"];
+content[3].textContent = siteContent["main-content"]["product-content"];
+content[4].textContent = siteContent["main-content"]["vision-content"];
+content[5].textContent = siteContent["contact"]["address"];
+content[6].textContent = siteContent["contact"]["phone"];
+content[7].textContent = siteContent["contact"]["email"];
+content[8].textContent = siteContent["footer"]["copyright"];
+
+let midImg = document.getElementById("middle-img");
+midImg.src = siteContent["main-content"]["middle-img-src"];

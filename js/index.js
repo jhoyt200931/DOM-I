@@ -57,3 +57,25 @@ button.textContent = siteContent["cta"]["button"];
 
 let headImg = document.getElementById("cta-img");
 headImg.src = siteContent["cta"]["img-src"];
+
+let subtitles = document.querySelectorAll("h4");
+subtitles[0].textContent = siteContent["main-content"]["features-h4"];
+subtitles[1].textContent = siteContent["main-content"]["about-h4"];
+subtitles[2].textContent = siteContent["main-content"]["services-h4"];
+subtitles[3].textContent = siteContent["main-content"]["product-h4"];
+subtitles[4].textContent = siteContent["main-content"]["vision-h4"];
+subtitles[5].textContent = siteContent["contact"]["contact-h4"];
+
+let content = document.querySelectorAll("p");
+content[0].textContent = siteContent["main-content"]["features-content"];
+content[1].textContent = siteContent["main-content"]["about-content"];
+content[2].textContent = siteContent["main-content"]["services-content"];
+content[3].textContent = siteContent["main-content"]["product-content"];
+content[4].textContent = siteContent["main-content"]["vision-content"];
+content[5].textContent = siteContent["contact"]["address"];
+content[6].textContent = siteContent["contact"]["phone"];
+content[7].textContent = siteContent["contact"]["email"];
+content[8].textContent = siteContent["footer"]["copyright"];
+
+let midImg = document.getElementById("middle-img");
+midImg.src = siteContent["main-content"]["middle-img-src"];
